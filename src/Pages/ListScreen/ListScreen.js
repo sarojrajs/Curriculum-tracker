@@ -118,24 +118,31 @@ const ListScreen = () => {
         setWeight(prevState=>prevState+100)
     }
     const deleteNode=(index)=>()=>{
+        console.log(index)
         const comparingValue=listItems[index].marginLeft
         const list=[...listItems]
         const newList=[]
+        let indexFound=false
         let greaterValueFound=false
-        list.forEach((item,i)=>{
+        for(let i=0;i<list.length;i++){
             if(i<index){
-                newList.push(item)
-                
+                newList.push(list[i])
+                continue
             }
             if(greaterValueFound){
-                newList.push(item)
+                newList.push(list[i])
+                continue
             }
-            if(i!==index){
-                if(!(item.marginLeft>comparingValue)){
+            if(i===index){
+                indexFound=true
+                continue
+            }else{
+                if(!(list[i].marginLeft>comparingValue)){
                     greaterValueFound=true
-                    newList.push(item)
+                    newList.push(list[i])
                 }
-        }})
+            }
+        }
         const lastItem=newList[newList.length-1]
         if(newList.length===0){
             setMarginLeft(20)
