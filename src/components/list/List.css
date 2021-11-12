@@ -1,0 +1,18 @@
+.list{
+    display: flex;
+    height: 45px;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+.list-left{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.list-right{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}

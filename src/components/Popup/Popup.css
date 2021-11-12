@@ -1,0 +1,26 @@
+.popup-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.3);
+    display: grid;
+    place-items: center;
+}
+.popup{
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+}
+.error-text{
+    color: red;
+}
+.success-text{
+    color: green;
+}

@@ -1,0 +1,30 @@
+.start-screen{
+    width: 100%;
+    height: 100vh;
+}
+.start-screen-box{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+.new-project{
+    margin: 10px 0;
+}
+.start-screen-title{
+    text-align: center;
+    margin: 10px 0;
+}
+.project-lists{
+    border-bottom: 1px solid gray ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.load-project{
+    flex: 1;
+    overflow-y: auto;
+}
