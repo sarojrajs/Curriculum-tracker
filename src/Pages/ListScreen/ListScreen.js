@@ -122,7 +122,6 @@ const ListScreen = () => {
         const comparingValue=listItems[index].marginLeft
         const list=[...listItems]
         const newList=[]
-        let indexFound=false
         let greaterValueFound=false
         for(let i=0;i<list.length;i++){
             if(i<index){
@@ -134,7 +133,7 @@ const ListScreen = () => {
                 continue
             }
             if(i===index){
-                indexFound=true
+               
                 continue
             }else{
                 if(!(list[i].marginLeft>comparingValue)){
