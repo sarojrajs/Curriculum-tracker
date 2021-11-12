@@ -162,6 +162,11 @@ const ListScreen = () => {
         const [reorderedItem] = items.splice(result.source.index, 1);
         items.splice(result.destination.index, 0, reorderedItem);
         setListItems(items)
+        const lastItem=items[items.length-1]
+        setMarginLeft(lastItem.marginLeft)
+        setSize(lastItem.size)
+        setWeight(lastItem.weight)
+        
     }
     const acceptProjectName=()=>{
         if(projectName===''){
