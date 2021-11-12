@@ -47,8 +47,8 @@ const StartScreen = () => {
                                 projects.map((project,index)=>{
                                     
                                     return( 
-                                    <div className='project-lists'>
-                                    <Link to={`/${project.id}`} key={index}>{project.name}</Link>
+                                    <div className='project-lists' key={index}>
+                                    <Link to={`/${project.id}`} >{project.name}</Link>
                                     <BsFillTrashFill onClick={deleteProject(project.id)}/>
                                     </div>
                                     )
